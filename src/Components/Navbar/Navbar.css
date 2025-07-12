@@ -1,0 +1,27 @@
+.navbar {
+    color: blueviolet;
+}
+.navbarContainer {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 6rem; */
+    display: flex;
+    /* float: left; */
+    background-color: black;
+    padding: 1.2rem;
+
+}
+.logo h3{
+    color: #fff;
+}
+.navbarLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.navLinkItem {
+    color: #fff;
+    text-decoration: none;
+}
