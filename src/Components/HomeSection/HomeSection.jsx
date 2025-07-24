@@ -6,9 +6,6 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import myPhoto from '../assets/images/my_photo_without_bg.png'
 
-
-
-
 function HomeSection() {
   return (
     <div className='homeSection'>

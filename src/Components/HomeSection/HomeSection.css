@@ -1,13 +1,13 @@
 .homeSection {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     gap: 10rem;
     width: 100vw;
     height: 100vh;
-    background: var(--bgc3);
+    background: var(--bgc1);
     color: #fff;
-    padding: 10rem 0;
+    /* padding: 10rem 0; */
 }
 .introInfo {
     display: flex;

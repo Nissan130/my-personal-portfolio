@@ -1,11 +1,13 @@
 import './App.css'
-import Home from './Pages/Home'
+import Navbar from './Components/Navbar/Navbar'
+import Sections from './Pages/Sections'
 
 function App() {
 
   return (
     <div>
-      <Home />
+      <Navbar />
+      <Sections />
     </div>
   )
 }

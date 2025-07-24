@@ -2,11 +2,10 @@
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    /* gap: 6rem; */
     display: flex;
-    /* float: left; */
-    background: var(--bgc3);
+    background: var(--bgc1);
     padding: 1rem;
+    position: fixed;
 
 }
 .logo h3{
