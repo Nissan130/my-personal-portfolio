@@ -1,8 +1,8 @@
 .aboutSection {
     margin: 0.5px 0;
     width: 100vw;
-    height: 90vh;
-    /* height: auto; */
+    /* height: 90vh; */
+    height: auto;
     background: var(--bgc1);
     padding: 1rem;
 }

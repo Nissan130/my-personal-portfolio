@@ -1,0 +1,78 @@
+.contactSection {
+    margin: 0.5px 0;
+    width: 100vw;
+    height: 90vh;
+    background: var(--bgc1);
+    padding: 1rem;
+}
+.contactSectionHeading h3 {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+}
+.contactContainerHeading p {
+    text-align: left;
+    color: #0ff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.contactContainer {
+    /* width: 30%; */
+    /* background-color: aqua; */
+    border: 1px solid #aaa;
+    width: 35%;
+    padding: 10px 0;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+.contactContent {
+    width: 100%;
+    
+}
+.input_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.input_box input[type="text"], input[type="email"] {
+    width: 80%;
+    height: 2.5rem;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+.input_box textarea {
+    width: 80%;
+    height: 100px;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+.input_box input[type = "submit"] {
+     width: 87%;
+    height: 3rem;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+    background-color: #0ff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
