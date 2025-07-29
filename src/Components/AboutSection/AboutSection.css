@@ -85,28 +85,53 @@
     background-color: #eee;
     bottom: 0;
 }
-
-.skills {
+.skill_cards {
+    width: 90%;
+    /* background-color: #eee; */
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
     gap: 1rem;
+    margin: .7rem 0;
 }
-
-.skill_title {
+.frontend_skills, .backend_skills {
+    width: 45%;
+    min-height: 9rem;
+    /* background-color: #eee; */
+    border: 1px solid #0ff;
+    padding: .5rem;
+    border-radius: 1rem;
     color: #eee;
+}
+.frontend_skill_heading {
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #ccc;
+    padding: 0.3rem 0;
+}
+.frontend_skill_heading p {
     font-size: 1.2rem;
-    width: 4.5rem;
+    font-weight: 500;
+    color: #eee;
+}
+.skill_title_progress {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: .4rem 0;
+    /* gap: 1rem; */
+}
+.skill_title_progress .title {
+    width: 25%;
+}
+.skill_title_progress .skill_bars {
+    width: 85%;
 }
 
-.skill_bar_container {
-    margin-top: 1.5rem;
-}
 
-.skill_bar_container .skill_bars {
-    background-color: #E3FCEA;
+ .skill_bars {
+    background-color: #ddd;
     width: 70%;
-    height: 1.7rem;
+    height: 1.2rem;
     border-radius: .9rem;
 }
 
@@ -118,9 +143,10 @@
 .python_bar,
 .react_native_bar,
 .rdbms_bar,
-.mongodb_bar {
+.mongodb_bar, 
+.php_bar {
     text-align: center;
-    height: 1.7rem;
+    height: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +203,11 @@
 .mongodb_bar {
     background-color: #FFA500;
     width: 63%;
+    color: #fff;
+}
+.php_bar {
+    background-color: #FFA500;
+    width: 50%;
     color: #fff;
 }
 
