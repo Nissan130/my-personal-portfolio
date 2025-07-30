@@ -3,7 +3,7 @@
     height: 92vh;
     background: var(--bgc1);
     padding: 1rem;
-    margin: 0.5px 0;
+    /* margin: 0.5px 0; */
 }
 .projectSectionHeading h3 {
     text-align: center;
@@ -60,7 +60,7 @@
     color: #333;
     cursor: pointer;
 }
-.active {
+.activeProject {
     background-color: #00ffff;
     color: #333;
 }

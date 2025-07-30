@@ -17,7 +17,7 @@ function ProjectSection() {
             </div>
             <div className="projectContent">
                 <div className="projectNavbar">
-                    <div className='projectNavItem active'>All</div>
+                    <div className='projectNavItem activeProject'>All</div>
                     <div className='projectNavItem'>Web Development</div>
                     <div className='projectNavItem'>App Development</div>
                     <div className='projectNavItem'>Data Analysis</div>

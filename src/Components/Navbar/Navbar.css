@@ -6,10 +6,12 @@
     background: var(--bgc1);
     padding: 1rem;
     position: fixed;
+    z-index: 1000;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
 
 }
 .logo h3{
-    color: #fff;
+    color: #0ff;
     font-size: 2rem;
 }
 .navbarLinks {
@@ -21,4 +23,29 @@
 .navLinkItem {
     color: #fff;
     text-decoration: none;
+    position: relative;
+    padding: 10px 3px;
+    cursor: pointer;
+}
+
+.navLinkItem::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: #0ff;
+    transition: width 0.3s ease-in-out;
+}
+.navLinkItem:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+.navLinkItem.active {
+    color: #0ff;
+    font-weight: 600;
+}
+.navLinkItem.active::after{
+    width: 100%;
 }

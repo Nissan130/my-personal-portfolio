@@ -14,5 +14,9 @@
 }
 #root {
   /* background: var(--bgc2); */
-  background-color: #999;
+  background: var(--bgc1);
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }

@@ -6,58 +6,110 @@
     width: 100vw;
     height: 100vh;
     background: var(--bgc1);
-    color: #fff;
-    /* padding: 10rem 0; */
 }
 .introInfo {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    padding: 2rem 0;
-    line-height: 1.3;
+    padding: 2rem 1rem;
+    line-height: 1.5;
 }
 .greetingTitle {
     font-size: 2.5rem;
+    color: #eee;
 }
 .nameTitle {
     font-size: 3.5rem;
-    color: cyan;
+    color: #0ff;
 }
 .designationTitle {
     font-size: 2rem;
+    color: #eee;
 }
 .contactIcons {
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 100;
+    /* background-color: blueviolet; */
+    padding:0.5rem 1rem;
 }
 .icons {
     color: #fff;
-    padding: .2rem;
-    font-size: 2rem;
+    /* padding: .2rem; */
+    font-size: 1.8rem;
     text-decoration: none;
     text-align: center;
-    margin: 0.2rem;
-    /* display: flex; */
+    /* margin: 0.2rem; */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 .icons:hover {
-    color: aqua;
-    /* box-shadow: .5rem .5rem 0 0 cyan; */
+    color: #0ff;
+    transform: scale(1.2);
 }
 .contactButtons {
     display: flex;
-    gap: 1rem;
+    gap: 1rem; 
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
 }
 .contactBtn {
     text-decoration: none;
-    background-color: cyan;
-    padding: 0.5rem;
+    background-color: #0ff;
+    padding: 0.7rem 1.5rem;
     margin: 1rem 0;
-    border-radius: .3rem;
+    border-radius: .5rem;
     color: #333;
     font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.contactBtn:hover {
+    transform: scale(1.1);
 }
 .my_photo {
     width: 20rem;
     height: 20rem;
 }
+
+
+/* ===========animations======== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInIntro {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+/* .homeLeft {
+    animation: fadeInIntro 1s ease-in;
+}
+.homeRight {
+    animation: fadeInImage 1s ease-in;
+} */
