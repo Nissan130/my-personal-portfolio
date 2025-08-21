@@ -16,7 +16,7 @@ A responsive personal portfolio website built with React. It showcases my skills
 ## installation & Setup Instructions
 1. Clone the repo
    ```bash
-   git clone https://github.com/yourusername/my-personal-portfolio.git
+   git clone https://github.com/Nissan130/my-personal-portfolio.git
    ```
 2. Go to the project folder
    ```bash
