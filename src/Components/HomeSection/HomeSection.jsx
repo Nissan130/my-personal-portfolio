@@ -4,7 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import myPhoto from '../assets/images/my_photo_without_bg.png'
+import myPhoto from '../assets/images/my_photo.png'
 import Typewriter from 'typewriter-effect';
 // import { useAnimation } from '../../hooks/useAnimation';
 
