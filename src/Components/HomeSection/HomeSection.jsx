@@ -18,8 +18,8 @@ function HomeSection() {
         <div className='introInfo'>
           <h3 className='greetingTitle'>Hi, <span style={{color: 'orange'}}>Me</span></h3>
           <h2 className='nameTitle'>Md. Nissan Ali</h2>
-          <h3 className='designationTitle'>A Software Developer
-            {/* <Typewriter
+          <h3 className='designationTitle'>
+            <Typewriter
               options={{
                 strings: [
                   "A Software Developer",
@@ -31,7 +31,7 @@ function HomeSection() {
                 deleteSpeed: 50,
                 delay: 100,
               }}
-            /> */}
+            />
           </h3>
         </div>
         <div className="contactIcons">
