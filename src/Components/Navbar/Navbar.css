@@ -1,11 +1,11 @@
 .navbarContainer {
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     /* background: var(--bgc1); */
     background: var(--main-bg);
-    padding: 1rem;
+    padding: 1rem 3rem;
     position: fixed;
     z-index: 1000;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
@@ -69,7 +69,7 @@
 @media (max-width: 600px) {
     .navbarLinks {
         position: absolute;
-        height: 200px;
+        height: 230px;
         top: -10px;
         left: 0;
         width: 100%;
@@ -78,10 +78,11 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        padding: 1rem 0;
+        /* padding:  0; */
         display: none;
         z-index: 1000;
         box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+        /* padding-top: 2.5rem; */
         
     }
 

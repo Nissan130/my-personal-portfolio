@@ -39,7 +39,8 @@
 }
 
 .nameTitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     color: var(--cyan-acent);
 }
 
@@ -181,7 +182,7 @@
     }
 
     .nameTitle {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     .designationTitle {
