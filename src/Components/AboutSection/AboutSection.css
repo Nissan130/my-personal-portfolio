@@ -1,10 +1,11 @@
 .aboutSection {
-    /* margin: 0.5px 0; */
-    width: 100vw;
-    min-height: 100vh;
-    height: auto;
-    background: var(--bgc1);
+    width: 100%;
+    /* background: var(--bgc1); */
+    background: var(--main-bg);
     padding: 1rem;
+    height: auto;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
 }
 
 .aboutHeading {
@@ -17,7 +18,8 @@
 
 .aboutHeading h2 {
     color: #f5f5f5;
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .aboutContent {
@@ -25,7 +27,7 @@
 }
 
 .bioTitle {
-    color: cyan;
+    color: #38bdf8;
     font-size: 1.5rem;
     position: relative;
     margin-bottom: 0.5rem;
@@ -45,7 +47,7 @@
 }
 
 .aboutContent .bioContainer p {
-    color: #eee;
+    color: var(--main-text);
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -63,6 +65,7 @@
 .skills_container {
     /* background-color: blue; */
     width: 50%;
+    /* flex-wrap: wrap; */
 }
 
 .mySkill_heading {
@@ -71,7 +74,7 @@
 }
 
 .mySkill_heading p {
-    color: #0ff;
+    color: var(--cyan-acent);
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -85,6 +88,7 @@
     background-color: #eee;
     bottom: 0;
 }
+
 .skill_cards {
     width: 90%;
     /* background-color: #eee; */
@@ -94,25 +98,30 @@
     gap: 1rem;
     margin: .7rem 0;
 }
-.frontend_skills, .backend_skills {
+
+.frontend_skills,
+.backend_skills {
     width: 45%;
     min-height: 9rem;
     /* background-color: #eee; */
-    border: 1px solid #0ff;
+    border: 1px solid var(--cyan-acent);
     padding: .5rem;
     border-radius: 1rem;
-    color: #eee;
+    color: var(--main-text);
 }
+
 .frontend_skill_heading {
     margin-bottom: .5rem;
     border-bottom: 1px solid #ccc;
     padding: 0.3rem 0;
 }
+
 .frontend_skill_heading p {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #eee;
+    color: #94a3b8;
 }
+
 .skill_title_progress {
     display: flex;
     align-items: center;
@@ -120,94 +129,132 @@
     padding: .4rem 0;
     /* gap: 1rem; */
 }
+
 .skill_title_progress .title {
     width: 25%;
 }
+
 .skill_title_progress .skill_bars {
     width: 85%;
 }
 
 
- .skill_bars {
-    background-color: #ddd;
+.skill_bars {
+    background-color: #aaa;
     width: 70%;
     height: 1.2rem;
     border-radius: .9rem;
 }
 
-.html_bar,
-.css_bar,
-.js_bar,
-.react_bar,
-.nodejs_bar,
-.python_bar,
-.react_native_bar,
-.rdbms_bar,
-.mongodb_bar, 
-.php_bar {
+.progressBar{
     text-align: center;
     height: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: .9rem;
+    font-size: .8rem;
 }
 
 .html_bar {
-    background-color: #07A2F5;
+    background-color: #4CAF50;
     width: 87%;
     color: #fff;
 }
 
 .css_bar {
-    background-color: #FF0000;
+    background-color: #2196F3;
     width: 73%;
     color: #fff;
 }
 
 .js_bar {
-    background-color: #0ff;
+    background-color: #FFC107;
     width: 63%;
     color: #333;
 }
 
 .react_bar {
-    background-color: #0000FF;
+    background-color: #F44336;
     width: 70%;
     color: #fff;
 }
 
 .nodejs_bar {
-    background-color: #800080;
+    background-color: #9C27B0;
     width: 25%;
     color: #fff;
 }
 
 .python_bar {
-    background-color: #FFFF00;
+    background-color: #00BCD4;
     width: 60%;
-}
-
-.react_native_bar {
-    background-color: #00FF00;
-    width: 70%;
-    color: #333;
+    color: #fff;
 }
 
 .rdbms_bar {
-    background-color: #FF00FF;
+    background-color: #E91E63;
     width: 57%;
     color: #fff;
 }
 
 .mongodb_bar {
-    background-color: #FFA500;
+    background-color: #FF9800;
     width: 63%;
     color: #fff;
 }
-.php_bar {
-    background-color: #FFA500;
+
+/* .express_bar {
+    background-color: #3F51B5;
     width: 50%;
+    color: #fff;
+} */
+
+.flask_bar {
+    background-color: #607D8B;
+    width: 20%;
+    color: #fff;
+}
+
+.sklearn_bar {
+    background-color: #673AB7;
+    width: 17%;
+    color: #fff;
+}
+
+.tensorflow_bar {
+    background-color: #009688;
+    width: 17%;
+    color: #fff;
+}
+
+.pandas_bar {
+    background-color: #CDDC39;
+    width: 60%;
+    color: #333;
+}
+
+.numpy_bar {
+    background-color: #795548;
+    width: 50%;
+    color: #fff;
+}
+
+.github_bar {
+    background-color: #00ACC1;
+    width: 60%;
+    color: #fff;
+}
+
+.sql_bar {
+    background-color: #C2185B;
+    width: 80%;
+    color: #fff;
+}
+
+.mongodb {
+    background-color: #7CB342;
+    width: 40%;
     color: #fff;
 }
 
@@ -221,11 +268,12 @@
     /* padding: 2rem; */
     /* color: black; */
     /* font-family: sans-serif; */
+    flex-wrap: wrap;
 }
 
 /* Heading */
 .education_heading p {
-    color: #0ff;
+    color: var(--cyan-acent);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -265,24 +313,24 @@
     bottom: 0;
     left: 1.1rem;
     width: 0.5rem;
-    background-color: #0ff;
+    background-color: var(--cyan-acent);
     z-index: 0;
 }
 
 /* Each item in the timeline */
 .timeline_item {
     /* position: relative; */
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 /* The circle */
 .circle {
     position: absolute;
     top: 10px;
-    left: 5px;
+    left: 10px;
     width: 25px;
     height: 25px;
-    background-color: #0ff;
+    background-color: var(--cyan-acent);
     border: 4px solid #ff00ff;
     border-radius: 50%;
     z-index: 1;
@@ -298,12 +346,160 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.4rem;
-    color: #eee;
+    color: #94a3b8;
 }
 
 .timeline_content p {
     /* margin: 0.2rem 0; */
     font-size: 1rem;
-    color: #eee;
+    color: #94a3b8;
     line-height: 1.5;
+}
+
+/* ================== Responsive ================== */
+
+/* Tablet screens */
+@media (max-width: 992px) {
+    .aboutHeading h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill_education_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .skills_container {
+        flex-direction: column;
+        width: 100%;
+        /* margin-right: 2rem; */
+    }
+
+    .education_container {
+        width: 100%;
+    }
+
+    .skill_cards {
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .frontend_skills,
+    .backend_skills {
+        width: 100%;
+    }
+
+    .timeline_content h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline_content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile screens */
+/* Mobile screens */
+@media (max-width: 600px) {
+    .aboutSection {
+        padding: 0.5rem;
+        
+    }
+
+    .aboutHeading h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .aboutContent {
+        margin: 0.5rem;
+    }
+
+    .bioTitle {
+        font-size: 1.3rem;
+    }
+
+    .aboutContent .bioContainer p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        word-break: break-word; /* prevents text overflow */
+    }
+
+    .skill_education_container {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .skills_container,
+    .education_container {
+        width: 100% !important;  /* override 50% width */
+    }
+
+    .skill_title_progress {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+        width: 100%;
+    }
+
+    .skill_title_progress .title {
+        width: 100%;
+    }
+
+    .skill_title_progress .skill_bars {
+        width: 100%;
+    }
+    
+    /* .timeline::before {
+        left: 0.6rem;
+        width: 0.3rem;
+    } */
+
+    /* .circle {
+        left: -2px;
+        width: 18px;
+        height: 18px;
+    } */
+
+    .timeline_content {
+        padding-left: 25px;
+    }
+
+    .timeline_content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline_content p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill_cards {
+        flex-direction: column;
+        width: 100% !important;  /* override 90% */
+        gap: 1rem;
+    }
+
+    .frontend_skills,
+    .backend_skills {
+        width: 100% !important;
+        font-size: 0.9rem;
+    }
+
+    .skill_title_progress {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+        width: 100%;
+    }
+
+    .skill_title_progress .title {
+        width: 100%;
+    }
+
+    .skill_title_progress .skill_bars {
+        width: 100%;
+    }
+
 }

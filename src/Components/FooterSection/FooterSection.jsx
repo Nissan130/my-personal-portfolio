@@ -18,8 +18,8 @@ function FooterSection() {
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#about">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="/resume.pdf" target="_blank">Resume</a></li>
                     </ul>
@@ -28,10 +28,10 @@ function FooterSection() {
                 <div class="footer-section footer_social_link">
                     <h4>Connect</h4>
                     <div class="social_icons">
-                        <a href="#linkedin" className='icons'><BsLinkedin /></a>
-                        <a href="#linkedin" className='icons'><FaGithub /></a>
-                        <a href="#linkedin" className='icons'><FaWhatsappSquare /></a>
-                        <a href="#linkedin" className='icons'><FaFacebook /></a>
+                        <a href="https://www.linkedin.com/in/md-nissan-ali130/" target='_blank' rel="noopener noreferrer" className='icons'><BsLinkedin /></a>
+                        <a href="https://github.com/Nissan130" target='_blank' rel="noopener noreferrer" className='icons'><FaGithub /></a>
+                        <a href="https://web.whatsapp.com/" target='_blank' rel="noopener noreferrer" className='icons'><FaWhatsappSquare /></a>
+                        <a href="https://www.facebook.com/nissan.mdnissan.1" target='_blank' rel="noopener noreferrer" className='icons'><FaFacebook /></a>
                     </div>
                 </div>
             </div>

@@ -2,75 +2,103 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
-    width: 100vw;
-    height: 100vh;
-    background: var(--bgc1);
+    gap: 20rem;
+    width: 100%;
+    min-height: 100vh;
+    /* background: var(--bgc1); */
+    background: var(--main-bg);
+    padding: 2rem;
+    /* flex-wrap: wrap; */
+
 }
+
+/* .homeLeft {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeRight {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .introInfo {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
     line-height: 1.5;
+    margin-bottom: 1rem;
 }
+
 .greetingTitle {
-    font-size: 2.5rem;
-    color: #eee;
-}
-.nameTitle {
-    font-size: 3.5rem;
-    color: #0ff;
-}
-.designationTitle {
     font-size: 2rem;
     color: #eee;
 }
+
+.nameTitle {
+    font-size: 2.5rem;
+    color: var(--cyan-acent);
+}
+
+.designationTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #eee;
+    /* nice cyan */
+    min-height: 30px;
+    /* keeps height stable while typing */
+}
+
 .contactIcons {
     display: flex;
     align-items: center;
     gap: 1rem;
-    z-index: 100;
-    /* background-color: blueviolet; */
-    padding:0.5rem 1rem;
+    margin-top: 1rem;
 }
+
 .icons {
     color: #fff;
-    /* padding: .2rem; */
     font-size: 1.8rem;
-    text-decoration: none;
-    text-align: center;
-    /* margin: 0.2rem; */
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
 .icons:hover {
-    color: #0ff;
+    color: var(--cyan-acent);
     transform: scale(1.2);
 }
+
 .contactButtons {
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;
+    flex-wrap: wrap;
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
 }
+
 .contactBtn {
     text-decoration: none;
-    background-color: #0ff;
+    background-color: var(--cyan-acent);
     padding: 0.7rem 1.5rem;
-    margin: 1rem 0;
     border-radius: .5rem;
     color: #333;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
 }
+
 .contactBtn:hover {
     transform: scale(1.1);
 }
+
 .my_photo {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
+    max-width: 100%;
+    /* border-radius: 50%; */
 }
+
 
 
 /* ===========animations======== */
@@ -79,37 +107,127 @@
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes fadeInIntro {
     from {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes fadeInImage {
     from {
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
+
 /* .homeLeft {
     animation: fadeInIntro 1s ease-in;
 }
 .homeRight {
     animation: fadeInImage 1s ease-in;
 } */
+
+
+/* ===== Media Queries ===== */
+
+/* Tablets (600px - 900px) */
+@media (max-width: 935px) {
+    .homeSection {
+        padding: 1rem;
+        gap: 0rem;
+        flex-wrap: wrap;
+
+    }
+
+    .homeLeft {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .homeRight {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .greetingTitle {
+        font-size: 1.8rem;
+    }
+
+    .nameTitle {
+        font-size: 2.2rem;
+    }
+
+    .designationTitle {
+        font-size: 1.3rem;
+    }
+
+    .my_photo {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+/* Small devices (phones < 600px) */
+@media (max-width: 600px) {
+    .homeSection {
+        flex-direction: column;
+        gap: 0;
+        /* text-align: center; */
+        padding: 1rem;
+        /* flex-wrap: wrap; */
+
+    }
+
+    .homeLeft,
+    .homeRight {
+        flex: 1 1 100%;
+    }
+
+    .greetingTitle {
+        font-size: 1.5rem;
+    }
+
+    .nameTitle {
+        font-size: 2rem;
+    }
+
+    .designationTitle {
+        font-size: 1.2rem;
+    }
+
+    .contactButtons {
+        justify-content: center;
+    }
+
+    .my_photo {
+        width: 14rem;
+        height: 14rem;
+    }
+}

@@ -1,7 +1,9 @@
 import React from 'react'
 import './AboutSection.css'
+// import { useAnimation } from '../../hooks/useAnimation'
 
 function AboutSection() {
+    // const aboutRef = useAnimation('fade-in-up')
     return (
         <div className='aboutSection'>
             <div className='aboutHeading'>
@@ -25,28 +27,28 @@ function AboutSection() {
                                 <div className="skill_title_progress">
                                     <div className="title">HTML</div>
                                     <div className="skill_bars">
-                                        <div className="html_bar">87%</div>
+                                        <div className="html_bar progressBar">87%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
                                     <div className="title">CSS</div>
                                     <div className="skill_bars">
-                                        <div className="css_bar">87%</div>
+                                        <div className="css_bar progressBar">73%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
                                     <div className="title">JS</div>
                                     <div className="skill_bars">
-                                        <div className="js_bar">63%</div>
+                                        <div className="js_bar progressBar">63%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
                                     <div className="title">React</div>
                                     <div className="skill_bars">
-                                        <div className="react_bar">70%</div>
+                                        <div className="react_bar progressBar">70%</div>
                                     </div>
                                 </div>
                             </div>
@@ -56,21 +58,28 @@ function AboutSection() {
                                 <div className="skill_title_progress">
                                     <div className="title">Python</div>
                                     <div className="skill_bars">
-                                        <div className="python_bar">60%</div>
+                                        <div className="python_bar progressBar">60%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
                                     <div className="title">Node.js</div>
                                     <div className="skill_bars">
-                                        <div className="nodejs_bar">25%</div>
+                                        <div className="nodejs_bar progressBar">25%</div>
                                     </div>
                                 </div>
 
-                                <div className="skill_title_progress">
-                                    <div className="title">PHP</div>
+                                {/* <div className="skill_title_progress">
+                                    <div className="title">Express.js</div>
                                     <div className="skill_bars">
-                                        <div className="php_bar">50%</div>
+                                        <div className="express_bar progressBar">50%</div>
+                                    </div>
+                                </div> */}
+
+                                <div className="skill_title_progress">
+                                    <div className="title">Flask</div>
+                                    <div className="skill_bars">
+                                        <div className="flask_bar progressBar">20%</div>
                                     </div>
                                 </div>
                             </div>
@@ -80,103 +89,61 @@ function AboutSection() {
 
                         <div className="skill_cards">
                             <div className="frontend_skills">
-                                <div className="frontend_skill_heading"><p>Framework & Database</p></div>
+                                <div className="frontend_skill_heading"><p>ML Tools</p></div>
                                 <div className="skill_title_progress">
-                                    <div className="title">HTML</div>
+                                    <div className="title">Scikit-learn</div>
                                     <div className="skill_bars">
-                                        <div className="html_bar">87%</div>
+                                        <div className="sklearn_bar progressBar">17%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
-                                    <div className="title">CSS</div>
+                                    <div className="title">Tensor Flow</div>
                                     <div className="skill_bars">
-                                        <div className="css_bar">87%</div>
+                                        <div className="tensorflow_bar progressBar">17%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
-                                    <div className="title">JS</div>
+                                    <div className="title">Pandas</div>
                                     <div className="skill_bars">
-                                        <div className="js_bar">63%</div>
+                                        <div className="pandas_bar progressBar">60%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
-                                    <div className="title">React</div>
+                                    <div className="title">NumPy</div>
                                     <div className="skill_bars">
-                                        <div className="react_bar">70%</div>
+                                        <div className="numpy_bar progressBar">50%</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="backend_skills">
-                                <div className="frontend_skill_heading"><p>Backend</p></div>
+                                <div className="frontend_skill_heading"><p>Other Tools</p></div>
                                 <div className="skill_title_progress">
-                                    <div className="title">Python</div>
+                                    <div className="title">Git & GitHub</div>
                                     <div className="skill_bars">
-                                        <div className="python_bar">60%</div>
+                                        <div className="github_bar progressBar">60%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
-                                    <div className="title">Node.js</div>
+                                    <div className="title">Postgre SQL</div>
                                     <div className="skill_bars">
-                                        <div className="nodejs_bar">25%</div>
+                                        <div className="sql_bar progressBar">80%</div>
                                     </div>
                                 </div>
 
                                 <div className="skill_title_progress">
-                                    <div className="title">PHP</div>
+                                    <div className="title">Mongo DB</div>
                                     <div className="skill_bars">
-                                        <div className="php_bar">50%</div>
+                                        <div className="mongodb_bar progressBar">40%</div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-
-                        {/* 
-
-
-                        <div className="skill_bar_container">
-                            <div className="skills">
-                                <div className='skill_title'>React</div>
-                                <div className="skill_bars">
-                                    <div className="react_bar">70%</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                       
-                        <div className="skill_bar_container">
-                            <div className="skills">
-                                <div className='skill_title'>React Native</div>
-                                <div className="skill_bars">
-                                    <div className="react_native_bar">70%</div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="skill_bar_container">
-                            <div className="skills">
-                                <div className='skill_title'>RDBMS</div>
-                                <div className="skill_bars">
-                                    <div className="rdbms_bar">57%</div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="skill_bar_container">
-                            <div className="skills">
-                                <div className='skill_title'>Mongo DB</div>
-                                <div className="skill_bars">
-                                    <div className="mongodb_bar">63%</div>
-                                </div>
-                            </div>
-
-                        </div> */}
 
 
                     </div>

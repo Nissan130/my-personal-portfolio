@@ -3,7 +3,8 @@
   padding: 0;
   font-family:sans-serif;
   font-size: ramp(3rem,1.5vw,5rem);
-  overflow-x: hidden;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 :root {
   /* --bgc1: linear-gradient(to right, #667eea, #764ba2); */
@@ -11,10 +12,13 @@
   /* --bgc4: linear-gradient(135deg, #2C3E50, #4CA1AF); */
   --bgc1: linear-gradient(135deg, #1e3c72, #2a5298);
   --bgc2: linear-gradient(135deg, #294271, #2d508d);
+  --main-bg: #0f172a;
+  --cyan-acent: #38bdf8;
+  --main-text: #94a3b8;
 }
 #root {
   /* background: var(--bgc2); */
-  background: var(--bgc1);
+  background: var(--main-bg);
 }
 html {
   scroll-behavior: smooth;
