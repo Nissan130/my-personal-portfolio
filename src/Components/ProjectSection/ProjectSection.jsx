@@ -8,6 +8,7 @@ import ecommerce_sales_img1 from '../assets/images/customer_freq.png'
 import ecommerce_sales_img2 from '../assets/images/customer_segments.png'
 import ecommerce_sales_img3 from '../assets/images/daily_sales.png'
 import ecommerce_sales_img4 from '../assets/images/top_products.png'
+import covid19_img1 from '../assets/images/covid19_img1.png'
 import ProjectImageSlider from '../../hooks/ProjectImageSlider'
 // import { useAnimation } from '../../hooks/useAnimation'
 
@@ -53,14 +54,25 @@ function ProjectSection() {
             category: "Web Development"
 
         },
-         {
+        {
             id: 4,
             title: "E-commerce Sales Analysis",
             main_img: ecommerce_sales_img4,
             other_images: [ecommerce_sales_img4, ecommerce_sales_img2, ecommerce_sales_img3, ecommerce_sales_img1],
             desc: "Conducted an end-to-end data analysis project on real-world online retail transactions. The project involved data cleaning, exploratory data analysis (EDA), customer segmentation using clustering, and identifying sales patterns and seasonal trends. Key insights include top-selling products, high-value customers, and actionable strategies for marketing and inventory planning.",
-            github: "https://github.com/Nissan130/ecommerce-sales-analysis/tree/main",
+            github: "https://github.com/Nissan130/Machine-Learning-Projects/tree/main/e-commerce-sales-analysis",
             tools: "Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn",
+            category: "Data Analysis"
+
+        },
+        {
+            id: 5,
+            title: "Global-COVID-19-Data-Visualization",
+            main_img: covid19_img1,
+            other_images: [covid19_img1],
+            desc: "This project is a fully interactive COVID-19 dashboard built using Python, Plotly, Seaborn, and Dash.",
+            github: "https://github.com/Nissan130/Machine-Learning-Projects/tree/main/e-commerce-sales-analysis",
+            tools: "Python, Pandas, Matplotlib, Seaborn, Plotly, Dash",
             category: "Data Analysis"
 
         }
@@ -126,7 +138,7 @@ function ProjectSection() {
 
                         {/* Slider with project images */}
                         <ProjectImageSlider images={selectedProject.other_images} />
-                        
+
                         <p className='projectDesc'>{selectedProject.desc}</p>
                         <p className='projectTools'><span>Tools Used: </span>{selectedProject.tools}</p>
                         <a href={selectedProject.github} target="_blank" rel="noreferrer" className="modalGithubBtn">
